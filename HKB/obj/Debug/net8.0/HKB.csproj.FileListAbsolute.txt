@@ -1,0 +1,14 @@
+D:\.prog\.random\HKB\HKB\bin\Debug\net8.0\HKB.exe
+D:\.prog\.random\HKB\HKB\bin\Debug\net8.0\HKB.deps.json
+D:\.prog\.random\HKB\HKB\bin\Debug\net8.0\HKB.runtimeconfig.json
+D:\.prog\.random\HKB\HKB\bin\Debug\net8.0\HKB.dll
+D:\.prog\.random\HKB\HKB\bin\Debug\net8.0\HKB.pdb
+D:\.prog\.random\HKB\HKB\obj\Debug\net8.0\HKB.GeneratedMSBuildEditorConfig.editorconfig
+D:\.prog\.random\HKB\HKB\obj\Debug\net8.0\HKB.AssemblyInfoInputs.cache
+D:\.prog\.random\HKB\HKB\obj\Debug\net8.0\HKB.AssemblyInfo.cs
+D:\.prog\.random\HKB\HKB\obj\Debug\net8.0\HKB.csproj.CoreCompileInputs.cache
+D:\.prog\.random\HKB\HKB\obj\Debug\net8.0\HKB.dll
+D:\.prog\.random\HKB\HKB\obj\Debug\net8.0\refint\HKB.dll
+D:\.prog\.random\HKB\HKB\obj\Debug\net8.0\HKB.pdb
+D:\.prog\.random\HKB\HKB\obj\Debug\net8.0\HKB.genruntimeconfig.cache
+D:\.prog\.random\HKB\HKB\obj\Debug\net8.0\ref\HKB.dll
