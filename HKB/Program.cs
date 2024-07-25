@@ -61,7 +61,10 @@ class Program
                 
                 Console.WriteLine("available taps: " + lastClickerUser.availableTaps);
                 Console.WriteLine("balance: " + lastClickerUser.balanceCoins);
-                Console.WriteLine("last update: " + DateTimeOffset.FromUnixTimeSeconds(lastClickerUser.lastSyncUpdate));
+                Console.WriteLine("earn passive per pour: " + lastClickerUser.earnPassivePerHour);
+                Console.WriteLine("update price: " + topUpgrade[0].price + "   " + topUpgrade[1].price + "   " + topUpgrade[2].price);
+                Console.WriteLine("last update: " + DateTimeOffset.FromUnixTimeSeconds(lastClickerUser.lastSyncUpdate).Minute);
+                Console.WriteLine("________________________________________");
             }
         }
     }
