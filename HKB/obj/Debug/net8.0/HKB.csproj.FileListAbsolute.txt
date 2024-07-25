@@ -12,3 +12,4 @@ D:\.prog\.random\HKB\HKB\obj\Debug\net8.0\refint\HKB.dll
 D:\.prog\.random\HKB\HKB\obj\Debug\net8.0\HKB.pdb
 D:\.prog\.random\HKB\HKB\obj\Debug\net8.0\HKB.genruntimeconfig.cache
 D:\.prog\.random\HKB\HKB\obj\Debug\net8.0\ref\HKB.dll
+D:\.prog\.random\HKB\HKB\obj\Debug\net8.0\HKB.sourcelink.json

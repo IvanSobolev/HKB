@@ -32,29 +32,19 @@ class Program
                 }
                 
                 //updates
-                float[] maxprofits = new float[3];
-                string[] id = new string[3];
-                string[] categorys = new string[3];
+                float maxprofits = 0;
                 int[] price = new int[3];
+                UpgradesForBuy[] topUpgrade = new UpgradesForBuy[3];
                 foreach (var upgrade in lastUpgrades)
                 {
-                    if (upgrade.isAvailable)
+                    if (upgrade.isAvailable && !upgrade.isExpired)
                     {
                         float profit = upgrade.profitPerHourDelta / (float)upgrade.price;
-                        if (profit >= maxprofits[0])
+                        if (profit >= maxprofits)
                         {
-                            for (int i = 2; i > 0; i--)
-                            {
-                                price[i] = price[i - 1];
-                                maxprofits[i] = maxprofits[i - 1];
-                                id[i] = id[i-1];
-                                categorys[i] = categorys[i-1];
-                            }
-                    
-                            maxprofits[0] = profit;
-                            id[0] = upgrade.id;
-                            categorys[0] = upgrade.section;
-                            price[0] = upgrade.price;
+                            topUpgrade[2] = topUpgrade[1];
+                            topUpgrade[1] = topUpgrade[0];
+                            topUpgrade[0] = upgrade;
                         }
                     }
                 }
@@ -63,7 +53,7 @@ class Program
                 {
                     if (lastClickerUser.balanceCoins >= price[i])
                     {
-                        lastClickerUser = await HttpReqest.BuyUpgradeRequest(id[i]);
+                        lastClickerUser = await HttpReqest.BuyUpgradeRequest(topUpgrade[i].id);
                         break;
                     }
                 }
