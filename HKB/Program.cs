@@ -33,7 +33,6 @@ class Program
                 
                 //updates
                 float maxprofits = 0;
-                int[] price = new int[3];
                 UpgradesForBuy[] topUpgrade = new UpgradesForBuy[3];
                 foreach (var upgrade in lastUpgrades)
                 {
@@ -51,7 +50,7 @@ class Program
 
                 for (int i = 0; i < 3; i++)
                 {
-                    if (lastClickerUser.balanceCoins >= price[i])
+                    if (lastClickerUser.balanceCoins >= topUpgrade[i].price)
                     {
                         lastClickerUser = await HttpReqest.BuyUpgradeRequest(topUpgrade[i].id);
                         break;
